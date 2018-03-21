@@ -3,9 +3,8 @@ python:
   - "3.6"
 before_install:
   - sudo apt-get update -qq
-  - sudo python -m pip install -U pylint
 install:
-  - ./install-dependencies.sh
+  - sudo python -m pip install -U pylint
 script:
   - py.test test.py
 after_script:
