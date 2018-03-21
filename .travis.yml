@@ -2,7 +2,7 @@ anguage: python
 python:
   - "3.6"
 script:
-  - pytest test.py
+  - py.test test.py
 after_script:
 notifications:
   recipients:
