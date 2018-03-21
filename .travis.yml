@@ -4,7 +4,7 @@ python:
 before_install:
   - sudo apt-get update -qq
 install:
-  - sudo python -m pip install -U pylint
+  - sudo python -m pip install pytest
 script:
   - py.test test.py
 after_script:
