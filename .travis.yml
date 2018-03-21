@@ -1,7 +1,11 @@
 anguage: python
 python:
   - "3.6"
-install: pip install --user -r python-pytest
+before_install:
+  - sudo apt-get update -qq
+  - sudo python -m pip install -U pylint
+install:
+  - ./install-dependencies.sh
 script:
   - py.test test.py
 after_script:
