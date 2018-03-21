@@ -1,6 +1,7 @@
 anguage: python
 python:
   - "3.6"
+install: pip install --user -r python-pytest
 script:
   - py.test test.py
 after_script:
